@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BroccoLab – dein veganer Sport-Coach</title>
+<meta name="description" content="BroccoLab: dein veganer Sport-Coach als App. Wissenschaftlich belegt, frag ihn alles – mit Preisen von REWE, dm & Co. Trag dich in die Warteliste ein.">
+<meta property="og:title" content="BroccoLab – dein veganer Sport-Coach">
+<meta property="og:description" content="Vegan & stark – wissenschaftlich belegt. Die Coach-App kommt im Januar 2027.">
+<meta property="og:image" content="assets/og.jpg">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+@font-face{font-family:"Jakarta";src:url(assets/PlusJakartaSans_500Medium.ttf) format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"Jakarta";src:url(assets/PlusJakartaSans_800ExtraBold.ttf) format("truetype");font-weight:800;font-display:swap}
+:root{--ground:#FBF6EE;--surface:#FFFFFF;--ink:#1F1A17;--muted:#6B5F56;--accent:#FF7A1A;--accent-deep:#C2500A;--track:#F1E9DD;--green:#DDEFD3;--peach:#FFE3CC;--lilac:#E9E1FA}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font:500 17px/1.5 "Jakarta",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;text-decoration:none;letter-spacing:-.3px}
+.logo img{width:36px;height:36px;border-radius:50%}
+.pill{display:inline-block;background:var(--surface);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--muted)}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:32px 0 56px}
+h1{font-weight:800;font-size:clamp(38px,6vw,64px);line-height:1.04;letter-spacing:-1.5px;margin:16px 0}
+h1 em{font-style:normal;color:var(--accent-deep)}
+.lead{font-size:clamp(17px,2.2vw,20px);color:#4A413A;max-width:34em;margin:0 0 28px}
+.hero-img{justify-self:center;max-width:100%}
+.hero-img img{width:100%;max-width:340px;height:auto;display:block}
+.waitlist{background:var(--surface);border-radius:28px;padding:22px;max-width:520px;box-shadow:0 1px 0 rgba(31,26,23,.04)}
+.waitlist h2{font-size:20px;font-weight:800;margin:0 0 6px}
+.waitlist p{margin:0 0 14px;color:var(--muted);font-size:15px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;background:var(--accent);color:#fff;font-weight:800;font-size:16px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:var(--accent-deep)}
+.btn.secondary{background:var(--track);color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:8px 0 56px}
+.card{border-radius:28px;padding:24px}
+.card .num{font-weight:800;font-size:15px;color:var(--muted)}
+.card h3{font-size:22px;font-weight:800;margin:8px 0 8px;letter-spacing:-.3px;line-height:1.2}
+.card p{margin:0;color:#4A413A;font-size:16px}
+.c1{background:var(--green)}.c2{background:var(--lilac)}.c3{background:var(--peach)}
+.chat{display:grid;gap:10px;max-width:560px;margin:0 auto}
+.bubble{border-radius:24px;padding:14px 18px;max-width:88%;font-size:16px}
+.me{background:var(--track);justify-self:end;border-bottom-right-radius:8px}
+.bot{background:var(--surface);border-bottom-left-radius:8px}
+.bot b{color:var(--accent-deep)}
+.src{font-size:13px;color:var(--muted);margin-top:6px}
+section.demo{padding:8px 0 64px}
+section.demo h2,.faq h2{text-align:center;font-size:clamp(26px,4vw,36px);font-weight:800;letter-spacing:-.6px;margin:0 0 24px}
+.faq{max-width:720px;margin:0 auto;padding:0 0 64px}
+details{background:var(--surface);border-radius:20px;padding:16px 20px;margin-bottom:10px}
+summary{font-weight:800;cursor:pointer}
+details p{margin:10px 0 0;color:#4A413A}
+footer{border-top:1px solid var(--track);padding:24px 0 40px;font-size:14px;color:var(--muted)}
+footer .row{justify-content:space-between}
+.note{font-size:13px;color:var(--muted);margin-top:12px}
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;padding-top:8px}
+  .hero-img{order:-1}
+  .hero-img img{max-width:160px}
+  .cards{grid-template-columns:1fr}
+  header .pill{font-size:12px;white-space:nowrap;padding:5px 10px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="./"><img src="assets/favicon.png" alt="">BroccoLab</a>
+    <span class="pill">App kommt im Januar 2027</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="pill">🥦 Für alle, die vegan <b>und</b> stark sein wollen</span>
+        <h1>Dein veganer Sport-Coach. <em>Wissenschaftlich belegt.</em></h1>
+        <p class="lead">Frag Brocco alles rund um Protein, Muskelaufbau, B12, Eisen und Supplements. Jede Antwort stützt sich auf Studien – und Brocco weiß, wo REWE, dm &amp; Co. dein Protein am günstigsten haben.</p>
+        <div class="waitlist" id="warteliste">
+          <h2>Warteliste</h2>
+          <p>Die Anmeldung öffnet in den nächsten Tagen. Bis dahin: folg uns auf TikTok, dort erfährst du es zuerst.</p>
+          <div class="row">
+            <a class="btn" href="https://www.tiktok.com/@broccolab" rel="noopener">TikTok @broccolab</a>
+          </div>
+          <p class="note">Kein Spam. Keine Kosten. Du kannst dich jederzeit wieder abmelden.</p>
+        </div>
+      </div>
+      <div class="hero-img"><img src="assets/brocco.png" width="440" height="625" alt="Brocco, der muskulöse Brokkoli-Coach mit orangem Stirnband"></div>
+    </section>
+
+    <section class="cards" aria-label="Was BroccoLab kann">
+      <div class="card c1"><div class="num">01</div><h3>Keine Bro-Science.</h3><p>Proteinbedarf, Leucin, B12, Eisen, Kreatin: Brocco antwortet auf Basis von über 130 ausgewerteten Studien – und sagt dir auch, wenn die Studienlage unklar ist.</p></div>
+      <div class="card c2"><div class="num">02</div><h3>Dein Coach. Frag alles.</h3><p>Sag einfach, was du gegessen hast. Brocco loggt es, behält deine Ziele im Blick und schlägt dir vor, was du ändern kannst.</p></div>
+      <div class="card c3"><div class="num">03</div><h3>Weiß, wo's am günstigsten ist.</h3><p>Echte Produkte und Preise von REWE, dm und weiteren Märkten – zum Beispiel, welches Protein dich pro 100 g am wenigsten kostet.</p></div>
+    </section>
+
+    <section class="demo">
+      <h2>So klingt Brocco</h2>
+      <div class="chat">
+        <div class="bubble me">Wie viel Protein brauche ich als Veganer für Muskelaufbau?</div>
+        <div class="bubble bot">Für Muskelaufbau gelten <b>ca. 1,6 g pro kg Körpergewicht</b> als gut belegte Untergrenze. Als Veganer kannst du mit 1,8–2,0 g/kg einen kleinen Puffer einplanen – nötig ist das laut Studienlage aber nicht sicher.<div class="src">Quellen u. a.: Morton et al. 2018, Br J Sports Med · Hevia-Larraín et al. 2021, Sports Med</div></div>
+        <div class="bubble me">Und wo bekomme ich das günstig?</div>
+        <div class="bubble bot">Rote Linsen von dmBio kosten dich ca. <b>1,12 € pro 100 g Protein</b>, Sojagranulat bei REWE ca. 1,79 €. Zum Vergleich: Tempeh liegt bei ca. 7,87 €.<div class="src">Preise: Stand November 2026, können abweichen.</div></div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Fragen</h2>
+      <details><summary>Wann kommt die App?</summary><p>Geplant ist der Start im App Store im Januar 2027. Wer auf der Warteliste steht, erfährt es zuerst.</p></details>
+      <details><summary>Was kostet BroccoLab?</summary><p>Das steht noch nicht fest. Die Warteliste ist kostenlos und unverbindlich.</p></details>
+      <details><summary>Ersetzt Brocco meine Ärztin oder meinen Arzt?</summary><p>Nein. BroccoLab gibt Informationen zu Ernährung und Training, keine medizinische Beratung. Bei Blutwerten, Beschwerden oder Vorerkrankungen sprich bitte mit deiner Ärztin oder deinem Arzt.</p></details>
+      <details><summary>Muss ich vegan sein?</summary><p>Nein. BroccoLab ist für alle, die vegan leben oder weniger Fleisch essen wollen – und dabei sportlich und stark bleiben möchten.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="row">
+      <span>© 2026 BroccoLab</span>
+      <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
